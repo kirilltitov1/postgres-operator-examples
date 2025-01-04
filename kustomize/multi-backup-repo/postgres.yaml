@@ -10,7 +10,7 @@ spec:
         - "ReadWriteOnce"
         resources:
           requests:
-            storage: 1Gi
+            storage: 100Gi
   backups:
     pgbackrest:
       configuration:
@@ -28,7 +28,7 @@ spec:
             - "ReadWriteOnce"
             resources:
               requests:
-                storage: 1Gi
+                storage: 100Gi
       - name: repo2
         s3:
           bucket: "<YOUR_AWS_S3_BUCKET_NAME>"
