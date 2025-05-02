@@ -3,7 +3,7 @@ kind: PostgresCluster
 metadata:
   name: develop-ha
 spec:
-  postgresVersion: 16
+  postgresVersion: 17
   instances:
     - name: pgha1
       replicas: 3
